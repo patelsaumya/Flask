@@ -1,0 +1,24 @@
+<!-- JINJA TEMPLATING ENGINE -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <h1>Welcome to the site! {{name}}</h1>
+        <ul>
+            {% for item in numbers %}
+                <li>{{item}}</li>
+            {% endfor %}
+        </ul>
+        {% if 3 in numbers %}
+            <p>Found you 3</p>
+        {% else %}
+            <p>Hmmm... 3 is not in the list</p>
+        {% endif %}
+        <h1>{{pup_dictionary}}</h1>
+        <h2>Here is a pic of puppy!</h2>
+        <img src="../static/puppy_pic.jpg" alt="puppy" height="100px" width="100px">
+    </body>
+</html>
